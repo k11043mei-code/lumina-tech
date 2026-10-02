@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f7fa;
+    color: #222;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+nav {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: #222;
+}
+nav a:hover {
+    color: #2563eb;
+}
+section {
+    max-width: 1000px;
+    margin: 70px auto;
+}
+section h2 {
+    font-size: 32px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+.service-container {
+    display: flex;
+    gap: 20px;
+}
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.voice-container {
+    display: flex;
+    gap: 20px;
+}
+.voice-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+.voice-card:hover {
+    transform: translateY(-5px);
+}
+#recruit {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+#recruit:hover {
+    transform: translateY(-5px);
+}
+#contact {
+    text-align: center;
+}
+#contact a {
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+#contact a:hover {
+    transform: translateY(-5px);
+}
+#access {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+#access:hover {
+    transform: translateY(-5px);
+}
+.hero {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content {
+    text-align: center;
+}
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+footer {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    background-color: #222;
+    color: white;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 300px;
+    }
+    .service-container {
+        flex-direction: column;
+    }
+    .voice-container {
+        flex-direction: column;
+    }
+    section {
+        margin: 70px 20px;
+    }
+    .hero {
+        min-height: 250px;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+}
